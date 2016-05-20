@@ -57,7 +57,7 @@ Quote.prototype.intentHandlers = {
 };
 
 function handleQuoteRequest(response) {
-	var max = audioPathArray.length;
+	var max = audioPathArray.length-1;
 	var randonNumber = Math.floor(Math.random() * (max - 1 + 1)) + 1;
 	var speechOutput = {
             speech: "<speak><audio src='"+audioPathArray[randonNumber]+"'/></speak>",
