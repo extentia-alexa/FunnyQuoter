@@ -37,6 +37,7 @@ To run this FunnyQuoter skill you need to do two things. The first is to deploy 
 5. Copy the Sample Utterances from the included file speechAssets/SampleUtterances.txt. Click Next.
 6. Select the Lambda ARN for the skill Endpoint and paste the ARN copied from above. 
 7. Select *Account Linking* to *No*. Click Next.
-8. [optional] go back to the skill Information tab and copy the appId. Paste the appId into the index.js file for the variable APP_ID, then update the lambda source zip file with this change and upload to lambda again, this step makes sure the lambda function only serves request from authorized source.
-9. You are now able to start testing your sample skill! You should be able to go to the [Echo webpage](http://echo.amazon.com/#skills) and see your skill enabled.
-10. Your skill is now saved and once you are finished testing you can continue to publish your skill.
+8. Go back to the skill Information tab and copy the appId. Paste the appId into the index.js file for the variable APP_ID, then update the lambda source zip file with this change and upload to lambda again, this step makes sure the lambda function only serves request from authorized source.
+9. Add you audio file paths in array audioPathArray in the index.js file. Preference to store audio file should be on amazon s3. Audio should have public read access.  
+10. You are now able to start testing your sample skill! You should be able to go to the [Echo webpage](http://echo.amazon.com/#skills) and see your skill enabled.
+11. Your skill is now saved and once you are finished testing you can continue to publish your skill.
