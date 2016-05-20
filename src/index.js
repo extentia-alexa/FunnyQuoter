@@ -1,8 +1,9 @@
 /**
  * App ID for the skill
  */
-var APP_ID = "amzn1.echo-sdk-ams.app.6fdc7487-57d4-48a0-84a5-3796552565c5"; 
+var APP_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // Replace APP_ID generated from amazon developer alexa skill section  
 
+var audioPathArray = ['file1', 'file2', , 'file3', , 'file4', , 'file5'];
 /**
  * The AlexaSkill prototype and helper functions
  */
@@ -56,10 +57,10 @@ Quote.prototype.intentHandlers = {
 };
 
 function handleQuoteRequest(response) {
-	var max = 29;
+	var max = audioPathArray.length;
 	var randonNumber = Math.floor(Math.random() * (max - 1 + 1)) + 1;
 	var speechOutput = {
-            speech: "<speak><audio src='https://s3.amazonaws.com/alexastuff/FunnyQuotes/"+randonNumber+".mp3'/></speak>",
+            speech: "<speak><audio src='"+audioPathArray[randonNumber]+"'/></speak>",
             type: AlexaSkill.speechOutputType.SSML
         };
     response.tellWithCard(speechOutput, "Funny Quote");
