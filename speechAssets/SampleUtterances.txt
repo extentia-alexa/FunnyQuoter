@@ -1,0 +1,26 @@
+QuoteIntent humor
+QuoteIntent smile
+QuoteIntent chuckle
+QuoteIntent make
+QuoteIntent cheer
+QuoteIntent cheer me up
+QuoteIntent tell me
+QuoteIntent tell me a quote
+QuoteIntent make me smile
+QuoteIntent cheer me up
+QuoteIntent make me chuckle
+
+HelpIntent help
+HelpIntent help me
+HelpIntent what can I ask you
+HelpIntent get help
+HelpIntent what commands can I ask
+HelpIntent what commands can I say
+HelpIntent what can I do
+HelpIntent what can I use this for
+HelpIntent what questions can I ask
+HelpIntent what can you do
+HelpIntent what do you do
+HelpIntent how do I use you
+HelpIntent how can I use you
+HelpIntent what can you tell me

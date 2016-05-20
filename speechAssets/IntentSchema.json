@@ -1,0 +1,18 @@
+{
+  "intents": [
+    {
+      "intent": "QuoteIntent",
+      "slots": []
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+ }
